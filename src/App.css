@@ -79,7 +79,10 @@
     background-image: url("mock-up-images/send_results.svg");
     grid-row-start: 25;
     grid-row-end: 31;
-    
 }
 
+/* Submenu */
+.create-quiz-submenu-item {
+    color: #F9B43C; 
+}
 
