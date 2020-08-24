@@ -20,14 +20,13 @@
     transition: 500ms;
 } */
 
-/* DashBoard Styling */
+/* DashBoard Styles (Mobile) */
 .dashboard-bg {
     background-image: url('mock-up-images/Dashboard_BG.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     max-width:100vw; 
     z-index:1; 
-   
 }
 .header {
     background-image: url("mock-up-images/header.svg");
