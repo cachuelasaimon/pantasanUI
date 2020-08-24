@@ -12,7 +12,7 @@ import { Provider } from 'react-redux'
 import Store from "./store"
 
 // UI 
-import Dashboard from './components/Dashboard/dashboard'
+import Dashboard from './components/Dashboard(overlay)/dashboard'
 
 
 
