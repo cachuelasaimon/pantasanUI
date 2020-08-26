@@ -31,7 +31,6 @@
 .header {
     /* background-image: url("mock-up-images/header.svg"); */
     background: #042788;
-    background-size: 100vw;
     border-radius: 0 0 20px 20px;
     background-repeat: no-repeat;
     grid-column-start: 1;
@@ -39,13 +38,14 @@
     grid-row-start: 1;
     grid-row-end:9;
     z-index:5;
-    
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)
 }
 .dashboard-button {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
 .dashboard-button:nth-child(even) {
     margin-left: 3vw;
