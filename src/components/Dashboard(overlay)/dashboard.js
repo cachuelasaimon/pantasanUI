@@ -4,78 +4,75 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 //////// Redux Actions ////////
 
-// Buttons 
+// Buttons
 import Header from './header'
 import DashboardButton from './DashboardButton'
 
 // Styled Components
-import styled from 'styled-components'
+import {
+    Grid,
+    Darken,
+} from './styled-components'
+import SubMenu from './SubMenu'
 
-const Grid = styled.div`
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 4vw;
-    grid-column-gap: 1vw; 
-    grid-auto-rows: 0.5rem;
-`
-const Darken = styled.div`
-    position: fixed;
-    left:0;
-    top:0;
-    width: 100%;
-    height:100%;
-    background-color: rgba(0,0,0,0.5);
-`
+
 
 class dashboard extends Component {
-    // Local State 
+    // Local State
     state = {
         // Username, prolly userID?
-        isActive: false,
+        activeButton: '',
+        dashboardIsActive: false,
         toggleOverlay: () => {
             this.setState(state=>({
-                isActive: !state.isActive,
+                dashboardIsActive: !state.dashboardIsActive,
             }))
         }
     }
 
-    // Create Quiz Handler 
+    // Create Quiz Handler
     CreateQuiz = () => {
         console.log('Create Quiz Event')
+        this.state.activeButton === '' ? this.setState({activeButton:'create-quiz'}) : this.setState({activeButton:''})
     }
 
-    // Check Scores Handler 
+    // Check Scores Handler
     CheckScores = () => {
         console.log('Check Scores Event')
+        this.state.activeButton === '' ? this.setState({activeButton:'check-scores'}) : this.setState({activeButton:''})
     }
 
     // Arrange Class Handler
     ArrangeClass = () => {
         console.log('Arrange Class Event')
+        this.state.activeButton === '' ? this.setState({activeButton:'arrange-class'}) : this.setState({activeButton:''})
     }
 
-    // Manage Schedule Handler 
+    // Manage Schedule Handler
     ManageSchedule = () => {
         console.log("Manage Schedule Event")
+        this.state.activeButton === '' ? this.setState({activeButton:'manage-schedule'}) : this.setState({activeButton:''})
     }
 
-    // Test Yourself Handler 
+    // Test Yourself Handler
     TestYourself = () => {
         console.log('Test Yourself Event')
+        this.state.activeButton === '' ? this.setState({activeButton:'test-yourself'}) : this.setState({activeButton:''})
     }
 
     // Send Results Handler
     SendResults = () => {
         console.log('Send Results Event')
+        this.state.activeButton === '' ? this.setState({activeButton:'send-results'}) : this.setState({activeButton:''})
     }
 
-    // Render 
+    // Render
     render () {
-        return ( 
+        return (
             <div>
-                <Darken className="overlay" style= {{ zIndex: `${this.state.isActive === false ? "-1" : "3"}` }}/> 
+                <Darken className="overlay" style= {{ zIndex: `${this.state.dashboardIsActive ? "3" : "-1"}` }}/>
                 <div className="dashboard-bg">
+                <SubMenu activeButton={this.state.activeButton} />
                     <Grid>
                         <Header />
                             <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CreateQuiz} label="create-quiz" />
@@ -84,7 +81,7 @@ class dashboard extends Component {
                             <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ManageSchedule} label="manage-schedule" />
                             <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.SendResults} label="send-results" />
                             <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.TestYourself} label="test-yourself" />
-                    </Grid>         
+                    </Grid>
                 </div>
             </div>
         )

@@ -21,13 +21,6 @@ class DashboardButton extends Component {
         console.log(`${this.props.label} ${this.state.active}`)
    }
 
-   // On Update
-//    componentDidUpdate (prevState) {
-//         if (prevState.active !== this.state.active) {
-//            this.state.active === true ? this.setState({zIndex:5}) : this.setState({zIndex:2})
-//         }
-//    }
-
 
     // Render 
     render () {
