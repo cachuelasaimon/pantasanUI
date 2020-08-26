@@ -1,5 +1,4 @@
 // Sample //
-
 // import Navbar from './components/sample/navbar';
 // import SampleComponents from './components/sample/sampleComponent'
 
@@ -14,13 +13,18 @@ import Store from "./store"
 // UI 
 import Dashboard from './components/Dashboard(overlay)/dashboard'
 
+// Theme Provider 
+import { ThemeProvider } from 'styled-components'
+import {Theme} from './components/themes/theme'
 
 
 function App() {
   return (
     <div className="App">
       <Provider store={Store}>
-        <Dashboard />
+        <ThemeProvider theme={Theme}>
+          <Dashboard />
+        </ThemeProvider>
       </Provider>
     </div>
   );
