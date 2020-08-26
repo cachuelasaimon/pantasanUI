@@ -22,15 +22,12 @@ export const Darken = styled.div`
 
 export const SubMenuItem = styled.div`
     display:flex;
-    height: 2rem;
     width: 50vw;
     background-color: white;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;  
     position:absolute;
+    left: 46vw;
     box-shadow: 0 3px 3px 0 rgba(76, 75, 75, 0.4);
 `
 
-export const CreateQuiz = styled.div`
-    background-color: #F9B43C;
-`
