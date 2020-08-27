@@ -22,7 +22,6 @@ export const Darken = styled.div`
 `
 
 // Dashboard Button Components
-<<<<<<< HEAD
 export const Header = styled.div`
     border-radius: 0 0 20px 20px;
     background-repeat: no-repeat;
@@ -37,8 +36,6 @@ export const Header = styled.div`
     margin-bottom: 0.5rem;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)
 `
-=======
->>>>>>> 76b85008d41160af1e19e14c91e8ab99a38e1e57
 export const DashboardButtonPicture = styled.div`
     grid-row-start: 1; 
     grid-row-end: 2; 
