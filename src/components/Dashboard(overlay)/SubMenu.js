@@ -15,8 +15,8 @@ class SubMenu extends Component {
          return (
              
             ///////////////// Responsive Submenu For Mobile /////////////////
-            
-             <React.Fragment>
+
+             <React.Fragment> 
                  {/* Create Quiz Sub Menu */}
                 <div>
                     <SubMenuItem 
@@ -25,10 +25,10 @@ class SubMenu extends Component {
                             zIndex:`${activeButton === 'create-quiz' ? '4' : '-1'}`,
                             height:`${2+(((window.screen.width - 250) / 100)*0.375)}rem`}}> 
                         <span 
-                            className="align-self-center create-quiz-submenu-item"
+                            className="align-self-center create-quiz-submenu-item-mobile"
                             style ={{ 
-                                marginLeft: `${0.8+(((window.screen.width - 250) / 50) /10)}rem`,
-                                fontSize: `${0.8+(((window.screen.width - 250) / 50) /10)}rem` }}>
+                                marginLeft: `${0.8+(((window.screen.width - 250) / 50) / 10)}rem`,
+                                fontSize: `${0.8+(((window.screen.width - 250) / 50) / 15)}rem` }}>
                             Create New
                         </span> 
                     </SubMenuItem>
@@ -39,10 +39,10 @@ class SubMenu extends Component {
                         zIndex:`${activeButton === 'create-quiz' ? '4' : '-1'}`,
                         height:`${2+(((window.screen.width - 250) / 100)*0.375)}rem`}}> 
                        <span 
-                            className="align-self-center create-quiz-submenu-item"
+                            className="align-self-center create-quiz-submenu-item-mobile"
                             style ={{ 
                                 marginLeft: `${0.8+(((window.screen.width - 250) / 50) /10)}rem`,
-                                fontSize: `${0.8+(((window.screen.width - 250) / 50) /10)}rem`}}>
+                                fontSize: `${0.8+(((window.screen.width - 250) / 50) /15)}rem`}}>
                             My Quizzes
                         </span> 
                     </SubMenuItem>
@@ -53,10 +53,10 @@ class SubMenu extends Component {
                         zIndex:`${activeButton === 'create-quiz' ? '4' : '-1'}`,
                         height:`${2+(((window.screen.width - 250) / 100)*0.375)}rem`}}> 
                         <span 
-                            className="align-self-center create-quiz-submenu-item"
+                            className="align-self-center create-quiz-submenu-item-mobile"
                             style = {{ 
                                 marginLeft: `${0.8+(((window.screen.width - 250) / 50) /10)}rem`,
-                                fontSize: `${0.8+(((window.screen.width - 250) / 50) /10)}rem` }}>
+                                fontSize: `${0.8+(((window.screen.width - 250) / 50) /15)}rem` }}>
                             Question Bank
                         </span> 
                     </SubMenuItem>

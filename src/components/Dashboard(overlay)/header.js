@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Header } from './styled-components'
 
 class header extends Component {
     // State 
@@ -9,7 +10,13 @@ class header extends Component {
         return (
             <React.Fragment>
                 {/* Header */}
-                <div className="header"> </div>
+                <Header 
+                    className="header"
+                    style = {{
+                        background: "#042788",
+                }}>
+                    <div className="header-logo"></div>
+                </Header>
             </React.Fragment>
         )
     }
