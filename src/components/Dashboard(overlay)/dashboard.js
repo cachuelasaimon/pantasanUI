@@ -10,7 +10,7 @@ import DashboardButton from './DashboardButton'
 
 // Styled Components
 import {
-    Grid,
+    DashboardGridMobile,
     Darken,
 } from './styled-components'
 import SubMenu from './SubMenu'
@@ -71,17 +71,17 @@ class dashboard extends Component {
         return ( 
             <div>
                 <Darken className="overlay" style= {{ zIndex: `${this.state.dashboardIsActive ? "3" : "-1"}` }}/> 
-                <div className="dashboard-bg">
+                <div className="dashboard-bg" >
                 <SubMenu activeButton={this.state.activeButton} />
-                    <Grid>
+                    <DashboardGridMobile>
                         <Header />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CreateQuiz} label="create-quiz-mobile" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CheckScores} label="scores-mobile" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ArrangeClass} label="arrange-class-mobile" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ManageSchedule} label="manage-schedule-mobile" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.SendResults} label="send-results-mobile" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.TestYourself} label="test-yourself-mobile" />
-                    </Grid>         
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} label={["Create","Quiz"]} Event={this.CreateQuiz} class="create-quiz-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} label={["Check","Scores"]} Event={this.CheckScores} class="scores-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} label={["Arrange","Class"]} Event={this.ArrangeClass} class="arrange-class-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} label={["Manage","Schedule"]} Event={this.ManageSchedule} class="manage-schedule-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} label={["Send","Results"]} Event={this.SendResults} class="send-results-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} label={["Test","Yourself"]} Event={this.TestYourself} class="test-yourself-mobile" />
+                    </DashboardGridMobile>         
                 </div>
             </div>
         )

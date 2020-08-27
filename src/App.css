@@ -5,7 +5,7 @@
 }
 /* Dashboard - Main Menu (Mobile) */
 .dashboard-bg {
-    background-image: url('Dashboard_BG.svg');
+    background-image: url('mock-up-images/Dashboard_BG.svg');
     background-size: 100%;
     background-repeat: repeat-y;
     max-width:100vw; 
@@ -44,7 +44,7 @@
     grid-row-end: 18;
 } 
 .create-quiz-mobile .dashboard-logo {
-    background-image: url('DashboardLogo/create-quiz-logo.png');
+    background-image: url('mock-up-images/create-quiz-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
