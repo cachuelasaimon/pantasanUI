@@ -75,12 +75,12 @@ class dashboard extends Component {
                 <SubMenu activeButton={this.state.activeButton} />
                     <Grid>
                         <Header />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CreateQuiz} label="create-quiz" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CheckScores} label="scores" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ArrangeClass} label="arrange-class" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ManageSchedule} label="manage-schedule" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.SendResults} label="send-results" />
-                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.TestYourself} label="test-yourself" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CreateQuiz} label="create-quiz-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.CheckScores} label="scores-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ArrangeClass} label="arrange-class-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.ManageSchedule} label="manage-schedule-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.SendResults} label="send-results-mobile" />
+                            <DashboardButton toggleOverlay={this.state.toggleOverlay} Event={this.TestYourself} label="test-yourself-mobile" />
                     </Grid>         
                 </div>
             </div>
